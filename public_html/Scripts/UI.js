@@ -5,7 +5,10 @@
  */
 
 $(document).ready(function(){
-    
+    var main = $("#Main");
+    var levels = [0];
+    levels[0] = $('<p id="level' + 0 + '"> Test </p>')
+    main.append(levels[0])
     
     
 })
