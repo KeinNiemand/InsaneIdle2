@@ -13,7 +13,7 @@ $(document).ready(function(){
     for (i = 1; i <= anzahl; i++) { 
         levels[i] = $('<h1 id="level' + i + '">'+i+' </h1>')
         main.append(levels[i])
-        levinh[i] = $('<div id="levelinh'+ 0 +'"> 0 </div>')
+        levinh[i] = $('<div id="levelinh'+ 0 +'"></div>')
         main.append(levinh[i])
         anzeigen[i] =$('<p id="anzeige'+i+'"> 123 </p>')
         levinh[i].append(anzeigen[i])
