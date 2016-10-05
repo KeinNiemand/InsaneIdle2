@@ -14,8 +14,9 @@ nav{
 }
 .Nav{
     margin: 0px;
-    padding: 0px;
+    padding: 2px;
     border: 2px;
     border-style: outset;
     border-radius: 6px;
+   
 }
