@@ -6,12 +6,15 @@
 
 $(document).ready(function(){
     var main = $("#Main");
-    var levels = [0];
-    levels[0] = $('<p id="level' + 0 + '">  </p>')
+    var levels = [anzahl];
+    for (i = 0; i < anzahl; i++) { 
+    levels[i] = $('<p id="level' + anzahl + '">'+anzahl+' </p>')
+}
+    
     main.append(levels[0])
     var levinh = [0]
-    levinh[0] = $('<div id="levelinh'+ 0 +'"> Test </div>')
-    levels[0].append(levinh[0])
-    levels[0].accordion();
+    levinh[0] = $('<div id="levelinh'+ 0 +'"> Test AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA </div>')
+    main.append(levinh[0])
+    main.accordion();
     
 })
