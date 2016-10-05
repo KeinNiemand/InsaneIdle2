@@ -34,6 +34,6 @@ $(document).ready(function(){
             mainstat = true;
         }
     })
-    $("*").css("font-family" , "Segoe UI Semibold")
-    $("#main").css("font-family" , "Segoe UI")
+    $("*").css("font-family" , "Segoe UI Semibold, Verdana")
+    $("#main").css("font-family" , "Segoe UI, Verdana")
 })
