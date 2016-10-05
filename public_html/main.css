@@ -18,5 +18,9 @@ nav>*{
     padding: 2px;
     border: 2px;
     border-style: solid;
-    border-radius: 6px;
+    border-radius: 8px;
+}
+
+button{
+    border-radius: 11px;
 }
