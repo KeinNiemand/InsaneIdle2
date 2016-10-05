@@ -7,11 +7,11 @@
 $(document).ready(function(){
     var main = $("#Main");
     var levels = [anzahl];
-    for (i = 0; i < anzahl; i++) { 
-    levels[i] = $('<p id="level' + anzahl + '">'+anzahl+' </p>')
+    for (i = 0; i <= anzahl; i++) { 
+    levels[i] = $('<p id="level' + i + '">'+i+' </p>')
+    main.append(levels[i])
 }
     
-    main.append(levels[0])
     var levinh = [0]
     levinh[0] = $('<div id="levelinh'+ 0 +'"> Test AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA </div>')
     main.append(levinh[0])
