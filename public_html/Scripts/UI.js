@@ -22,8 +22,9 @@ $(document).ready(function(){
         KnopfA[i] =$('<button id="KnopfA'+i+'" class="Knopf">Klick Mich</button> ')
         levinh[i].append(KnopfA[i])
 }
-    haupt.accordion();
+    
     main.accordion();
+    
     
 
     
