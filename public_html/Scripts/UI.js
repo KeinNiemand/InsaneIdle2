@@ -34,6 +34,6 @@ $(document).ready(function(){
             mainstat = true;
         }
     })
-    $("*").css("font-family" , "Segoe UI Semibold, Verdana")
-    $("#main").css("font-family" , "Segoe UI, Verdana")
+    $("*").css("font-family" , "Segoe UI Semibold,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue Frutiger, Verdana");
+    $("#main").css("font-family" , "Segoe UI,Frutiger Linotype,Dejavu Sans,Helvetica Neue Frutiger, Verdana");
 })
