@@ -12,11 +12,10 @@ nav{
     padding: 0px;
     margin: 10px;
 }
-.Nav{
+nav>*{
     margin: 0px;
     padding: 2px;
     border: 2px;
-    border-style: outset;
+    border-style: solid;
     border-radius: 6px;
-   
 }
