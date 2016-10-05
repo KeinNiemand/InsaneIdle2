@@ -5,7 +5,7 @@
  */
 
 $(document).ready(function(){
-    var haupt = $("Haupt")
+    var haupt = $("#Haupt")
     var main = $("#Main");
     var levels = [anzahl];
     var levinh = [anzahl];
@@ -22,7 +22,7 @@ $(document).ready(function(){
         KnopfA[i] =$('<button id="KnopfA'+i+'" class="Knopf">Klick Mich</button> ')
         levinh[i].append(KnopfA[i])
 }
-    
+    haupt.accordion();
     main.accordion();
     
 
