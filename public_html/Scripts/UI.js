@@ -7,8 +7,11 @@
 $(document).ready(function(){
     var main = $("#Main");
     var levels = [0];
-    levels[0] = $('<p id="level' + 0 + '"> Test </p>')
+    levels[0] = $('<p id="level' + 0 + '">  </p>')
     main.append(levels[0])
-    main.hide();
+    var levinh = [0]
+    levinh[0] = $('<div id="levelinh'+ 0 +'"> Test </div>')
+    levels[0].append(levinh[0])
+    levels[0].accordion();
     
 })
