@@ -7,14 +7,20 @@
 $(document).ready(function(){
     var main = $("#Main");
     var levels = [anzahl];
-    for (i = 0; i <= anzahl; i++) { 
-    levels[i] = $('<p id="level' + i + '">'+i+' </p>')
-    main.append(levels[i])
+    var levinh = [anzahl];
+    var anzeigen = [anzahl];
+    var Knoepf0 = [anzahl];
+    for (i = 1; i <= anzahl; i++) { 
+        levels[i] = $('<h1 id="level' + i + '">'+i+' </h1>')
+        main.append(levels[i])
+        levinh[i] = $('<div id="levelinh'+ 0 +'"> 0 </div>')
+        main.append(levinh[i])
+        anzeigen[i] =$('<p id="anzeige'+i+'"> 123 </p>')
+        levinh[i].append(anzeigen[i])
 }
-    
-    var levinh = [0]
-    levinh[0] = $('<div id="levelinh'+ 0 +'"> Test AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA </div>')
-    main.append(levinh[0])
     main.accordion();
+    
+
+    
     
 })
