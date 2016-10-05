@@ -5,12 +5,13 @@
  */
 
 $(document).ready(function(){
+    var haupt = $("Haupt")
     var main = $("#Main");
     var levels = [anzahl];
     var levinh = [anzahl];
     var anzeigen = [anzahl];
     var KnopfA = [anzahl];
-    var sichtmain = true
+    var nav = $("nav");
     for (i = 1; i <= anzahl; i++) { 
         levels[i] = $('<h1 id="level' + i + '">'+i+' </h1>')
         main.append(levels[i])
@@ -21,10 +22,9 @@ $(document).ready(function(){
         KnopfA[i] =$('<button id="KnopfA'+i+'" class="Knopf">Klick Mich</button> ')
         levinh[i].append(KnopfA[i])
 }
+    
     main.accordion();
-    $("nav>*:1").click(function(){
-        
-    })
+    
 
     
     
