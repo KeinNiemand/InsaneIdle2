@@ -11,7 +11,7 @@ $(document).ready(function(){
     var levinh = [anzahl];
     var anzeigen = [anzahl];
     var KnopfA = [anzahl];
-    var nav = $("nav");
+    var mainstat = true;
     for (i = 1; i <= anzahl; i++) { 
         levels[i] = $('<h1 id="level' + i + '">'+i+' </h1>')
         main.append(levels[i])
@@ -24,9 +24,15 @@ $(document).ready(function(){
 }
     
     main.accordion();
-    
-    
-
-    
-    
+    $("nav>*:first").click(function() {
+        if (mainstat) {
+            main.hide();
+            mainstat = false;
+        }
+        else {
+            main.show();
+            mainstat = true;
+        }
+    })
+      
 })
