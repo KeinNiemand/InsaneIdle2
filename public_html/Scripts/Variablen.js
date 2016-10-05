@@ -4,3 +4,11 @@
  * and open the template in the editor.
  */
 var anzahl = 5;
+
+
+function ModusAendern (Variable) {
+	if (window[Variable] == false)
+		window[Variable] = true
+        else
+            windows[Variable] = false
+        }
