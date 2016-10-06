@@ -25,14 +25,15 @@ $(document).ready(function(){
     
     main.accordion();
     $("nav>*:first").click(function() {
-        if (mainstat) {
-            main.hide();
-            mainstat = false;
-        }
-        else {
-            main.show();
-            mainstat = true;
-        }
+      // if (mainstat) {
+         //   main.hide();
+         //  mainstat = false;
+      //  }
+      //  else {
+        //    main.show();
+        //    mainstat = true;
+      //  }  
+      main.slideToggle();
     })
     $("*").css("font-family" , "Segoe UI Semibold,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue Frutiger, Verdana");
     $("#main").css("font-family" , "Segoe UI,Frutiger Linotype,Dejavu Sans,Helvetica Neue Frutiger, Verdana");

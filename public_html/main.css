@@ -9,6 +9,8 @@ and open the template in the editor.
 */
 body{
     background-color: chartreuse;
+    padding: 0px;
+    margin:  0px;
 
 }
 
