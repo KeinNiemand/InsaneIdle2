@@ -3,7 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+//Einstellugnen
 var anzahl = 5;
+var FPS = 30;
 
 var uiv = {
     haupt: $("#Haupt"),
@@ -30,8 +33,8 @@ for (i = 0; i < anzahl; i++) {
     Game.Sp.geld[i] = Decimal(0)
     Game.Sp.anzGek[i] = Decimal(0)
     Game.prosek[i] = Decimal(0)
-    Game.basPreis[i] = Decimal(i ^ 2 * 100)
-    Game.preiserh[i] = Decimal(1+(0.75*i)^1.5)
-    
-
+    Game.basPreis[i] = Decimal(i ^ 2.3 * 100)
+    Game.preiserh[i] = Decimal(1+(1.5*i)^2.2)
+    Game.Sp.preis[i] = basPreis[i]
 }
+
