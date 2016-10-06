@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+//UI Initialiesierung
 $(document).ready(function(){
     uiv.main = $("#Main")
     for (i = 1; i <= anzahl; i++) { 
@@ -16,20 +17,15 @@ $(document).ready(function(){
         uiv.levinh[i].append(uiv.anzeigen[i])
         uiv.KnopfA[i] =$('<button id="KnopfA'+i+'" class="Knopf">Klick Mich</button> ')
         uiv.levinh[i].append(uiv.KnopfA[i])
+        uiv.preisanzeigen[i] = $('<span id="pAnzeige'+i+'"> Preis: </span>')
+        uiv.levinh[i].append(uiv.preisanzeigen[i])
 }
     
     uiv.main.accordion();
     $("nav>*:first").click(function() {
-      // if (mainstat) {
-         //   main.hide();
-         //  mainstat = false;
-      //  }
-      //  else {
-        //    main.show();
-        //    mainstat = true;
-      //  }  
       main.slideToggle();
     })
     $("*").css("font-family" , "Segoe UI Semibold,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue Frutiger, Verdana");
     $("#main").css("font-family" , "Segoe UI,Frutiger Linotype,Dejavu Sans,Helvetica Neue Frutiger, Verdana");
 })
+
