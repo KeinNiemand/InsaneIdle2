@@ -13,3 +13,11 @@ var uiv = {
     anzeigen :  [anzahl],
     KnopfA : [anzahl]
     };
+
+var Game = {
+   Sp : {
+       geld : [],
+       preis : [],
+       anzGek : [],    
+   }
+}
