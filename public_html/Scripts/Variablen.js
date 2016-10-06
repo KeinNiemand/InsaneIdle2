@@ -5,4 +5,11 @@
  */
 var anzahl = 5;
 
-
+var uiv = {
+    haupt : $("#Haupt"),
+    main : $("#Main"),
+    levels : [anzahl],
+    levinh :  [anzahl],
+    anzeigen :  [anzahl],
+    KnopfA : [anzahl]
+    };

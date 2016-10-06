@@ -5,25 +5,20 @@
  */
 
 $(document).ready(function(){
-    var haupt = $("#Haupt")
-    var main = $("#Main");
-    var levels = [anzahl];
-    var levinh = [anzahl];
-    var anzeigen = [anzahl];
-    var KnopfA = [anzahl];
-    var mainstat = true;
+    uiv.main = $("#Main")
     for (i = 1; i <= anzahl; i++) { 
-        levels[i] = $('<h1 id="level' + i + '">'+i+' </h1>')
-        main.append(levels[i])
-        levinh[i] = $('<div id="levelinh'+ 0 +'"></div>')
-        main.append(levinh[i])
-        anzeigen[i] =$('<p id="anzeige'+i+'"> 123 </p>')
-        levinh[i].append(anzeigen[i])
-        KnopfA[i] =$('<button id="KnopfA'+i+'" class="Knopf">Klick Mich</button> ')
-        levinh[i].append(KnopfA[i])
+        
+        uiv.levels[i] = $('<h1 id="level' + i + '">'+i+' </h1>')
+        uiv.main.append(uiv.levels[i])
+        uiv.levinh[i] = $('<div id="levelinh'+ 0 +'"></div>')
+        uiv.main.append(uiv.levinh[i])
+        uiv.anzeigen[i] =$('<p id="anzeige'+i+'"> 123 </p>')
+        uiv.levinh[i].append(uiv.anzeigen[i])
+        uiv.KnopfA[i] =$('<button id="KnopfA'+i+'" class="Knopf">Klick Mich</button> ')
+        uiv.levinh[i].append(uiv.KnopfA[i])
 }
     
-    main.accordion();
+    uiv.main.accordion();
     $("nav>*:first").click(function() {
       // if (mainstat) {
          //   main.hide();
