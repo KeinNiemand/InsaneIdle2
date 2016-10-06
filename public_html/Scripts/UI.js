@@ -29,3 +29,11 @@ $(document).ready(function(){
     $("#main").css("font-family" , "Segoe UI,Frutiger Linotype,Dejavu Sans,Helvetica Neue Frutiger, Verdana");
 })
 
+function TextAktu() {
+    for (i=1; i<=anzahl;i++) {
+        $("#anzeige"+i).text(Game.Sp.geld[i].toPrecision(3) + '€');
+        $("#pAnzeige"+i).text("Price:" + Game.Sp.preis[i].toPrecision(3) + '€');
+        uiv.anzeigen[0]
+    }
+}
+

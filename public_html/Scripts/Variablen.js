@@ -7,6 +7,7 @@
 //Einstellugnen
 var anzahl = 5;
 var FPS = 30;
+Decimal.config({ precision: 12 })
 
 var uiv = {
     haupt: $("#Haupt"),
@@ -30,12 +31,11 @@ var Game = {
 };
 
 //Initialiesierung der Variablen
-for (i = 0; i < anzahl; i++) {
+for (i = 1; i <= anzahl; i++) {
     Game.Sp.geld[i] = Decimal(0)
     Game.Sp.anzGek[i] = Decimal(0)
     Game.prosek[i] = Decimal(0)
     Game.basPreis[i] = Decimal(i ^ 2.3 * 100)
     Game.preiserh[i] = Decimal(1+(1.5*i)^2.2)
-    Game.Sp.preis[i] = basPreis[i]
+    Game.Sp.preis[i] = Game.basPreis[i]
 }
-
