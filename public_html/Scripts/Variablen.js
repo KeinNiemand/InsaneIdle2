@@ -36,7 +36,11 @@ for (i = 1; i <= anzahl; i++) {
     Game.Sp.geld[i] = Decimal(0)
     Game.Sp.anzGek[i] = Decimal(0)
     Game.prosek[i] = Decimal(0)
-    Game.basPreis[i] = Decimal(Math.pow(1+((i*0.1)-0.2), 66.66) * 100)
-    Game.preiserh[i] = Decimal(1+(1.5*i)^1.8)
+    //Game.basPreis[i] = Decimal(Math.pow(1+((i*0.1)-0.2), 66.66) * 100)
+    //BASIS PREIS FORMEL
+    Game.basPreis[i] = Decimal(Decimal.pow(Decimal.mul(i,0.1).sub(0.2).add(1), 66.66).mul(100))
+    //Game.preiserh[i] = Decimal(1+(1.5*i)^1.8)
+    //PREIS ERHÖUNGS FORMEL
+    Game.preiserh[i] = Decimal(Decimal.mul(1.5,i).pow(1.8).add(1))
     Game.Sp.preis[i] = Game.basPreis[i]
 }
