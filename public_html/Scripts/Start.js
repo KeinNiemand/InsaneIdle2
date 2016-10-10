@@ -5,9 +5,6 @@
  */
 
 function init() {
-    for (i=1;i<=anzahl;i++ ){
-        $("KnopfA" + i).click(kauf(i));
-    }
     Game.Sp.geld[1] = Decimal(100);
 }
 

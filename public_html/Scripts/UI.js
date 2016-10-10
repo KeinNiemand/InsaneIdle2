@@ -15,7 +15,7 @@ $(document).ready(function(){
         uiv.main.append(uiv.levinh[i])
         uiv.anzeigen[i] =$('<p id="anzeige'+i+'"> 123 </p>')
         uiv.levinh[i].append(uiv.anzeigen[i])
-        uiv.KnopfA[i] =$('<button id="KnopfA'+i+'" class="Knopf">Buy 1/10%More</button> ')
+        uiv.KnopfA[i] =$('<button id="KnopfA'+i+'" class="Knopf" onclick="kauf '+i+'">Buy 1/10%More</button> ')
         uiv.levinh[i].append(uiv.KnopfA[i])
         uiv.preisanzeigen[i] = $('<span id="pAnzeige'+i+'"> Preis: </span>')
         uiv.levinh[i].append(uiv.preisanzeigen[i])
