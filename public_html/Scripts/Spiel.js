@@ -34,7 +34,7 @@ function rechnen() {
 function protick(){
     for (i=1;i<=anzahl;i++) {
         rechnen()
-        Game.Sp.geld[i] = Game.Sp.geld[i].mul(Game.prosek)
+        Game.Sp.geld[i] = Game.Sp.geld[i].mul(Game.prosek[i])
         TextAktu()
     }
 }
