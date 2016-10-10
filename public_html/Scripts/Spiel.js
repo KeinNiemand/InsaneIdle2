@@ -8,7 +8,7 @@ function kauf(nummer) {
     if(Game.Sp.geld[1].gte(Game.preis[nummer]) && nummer !=1 ) {
         if(Game.Sp.geld[nummer].gt(0)){
             Game.Sp.geld[1] = Game.Sp.geld[1].sub(Game.preis[nummer]);
-            Game.Sp.geld[nummer] = Game.Sp.geld[nummer].mul(1.1);
+            Game.Sp.geld[nummer] = Game.Sp.geld[nummer].mul(1.5);
             Game.Sp.anzGek[nummer] = Game.Sp.anzGek.add(1)
             rechnen()
             TextAktu()
