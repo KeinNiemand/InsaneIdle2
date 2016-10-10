@@ -4,4 +4,16 @@
  * and open the template in the editor.
  */
 
+function init() {
+    for (i=1;i<=anzahl;i++ ){
+        $("KnopfA" + i).click(kauf(i));
+    }
+    Game.Sp.geld[0] = Decimal(100);
+}
+
+$(document).ready(function(){
+    init();
+    TextAktu()
+});
+
 
