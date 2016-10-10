@@ -6,7 +6,7 @@
 
 //Einstellugnen
 var anzahl = 5;
-var FPS = 30;
+var TPS = 30;
 Decimal.config({ precision: 12 })
 
 var uiv = {

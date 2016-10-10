@@ -11,6 +11,7 @@ function init() {
 $(document).ready(function(){
     init();
     TextAktu()
+    setInterval(protick(), 1000/TPS)
 });
 
 
