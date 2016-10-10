@@ -30,3 +30,11 @@ function rechnen() {
         Game.preis[i] = Game.basPreis[i].mul(Game.preiserh[i].pow(Game.Sp.anzGek[i]));
     };
 }
+
+function protick(){
+    for (i=1;i<=anzahl;i++) {
+        rechnen()
+        Game.Sp.geld[i] = Game.Sp.geld[i].mul(Game.prosek)
+        TextAktu()
+    }
+}
