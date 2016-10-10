@@ -27,7 +27,7 @@ var Game = {
     basPreis: [],
     preiserh: [],
     preis: [],
-    produmul: [0.01, 0.01, 0.01, 0.01, 0.01],
+    produmul: [],
     prosek: []
 };
 
@@ -43,4 +43,5 @@ for (i = 1; i <= anzahl; i++) {
     //PREIS ERHÖUNGS FORMEL
     Game.preiserh[i] = Decimal(Decimal.mul(1.5,i).pow(1.8).add(1))
     Game.preis[i] = Game.basPreis[i]
+    Game.produmul[i] = Decimal(0.01)
 }
