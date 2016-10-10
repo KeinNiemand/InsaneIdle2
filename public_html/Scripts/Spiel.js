@@ -16,7 +16,7 @@ function kauf(nummer) {
         else {
             Game.Sp.geld[1] = Game.Sp.geld[1].sub(Game.preis[nummer]);
             Game.Sp.geld[nummer] = Decimal(1);
-            Game.Sp.anzGek[nummer] = Game.Sp.anzGek.add(1);
+            Game.Sp.anzGek[nummer] = Game.Sp.anzGek[nummer].add(1);
             rechnen()
             TextAktu()
         }
