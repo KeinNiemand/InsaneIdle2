@@ -23,7 +23,7 @@ function kauf(nummer) {
 
 function rechnen() {
     for (i=1; i<=anzahl ;i++) {
-        Game.prosek[i] = Game.Sp.geld[i+1].mul(Game.produmul).add(1);
-        Game.preis[i] = Game.basPreis[i].mul(Game.preiserh.pow(Game.Sp.anzGek));
+        Game.prosek[i] = Game.Sp.geld[i+1].mul(Game.produmul[i+1]).add(1);
+        Game.preis[i] = Game.basPreis[i].mul(Game.preiserh[0].pow(Game.Sp.anzGek));
     };
 }
