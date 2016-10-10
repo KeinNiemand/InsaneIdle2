@@ -22,11 +22,12 @@ var uiv = {
 var Game = {
     Sp: {
         geld: [],
-        preis: [],
         anzGek: []
     },
     basPreis: [],
     preiserh: [],
+    preis: [],
+    produmul: [0.01, 0.01, 0.01, 0.01, 0.01],
     prosek: []
 };
 
