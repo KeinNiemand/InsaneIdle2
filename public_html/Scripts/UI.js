@@ -31,7 +31,7 @@ $(document).ready(function(){
 
 function TextAktu() {
     for (i=1; i<=anzahl;i++) {
-        $("#anzeige"+i).text(Game.Sp.geld[i].toPrecision(3) + '');
+        $("#anzeige"+i).text(Game.Sp.geld[i].toPrecision(3) + 'lvl' +i);
         $("#pAnzeige"+i).text("Price:" + Game.preis[i].toPrecision(3) + ' lvl1');
         uiv.anzeigen[0]
     }
