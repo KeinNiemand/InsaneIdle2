@@ -32,9 +32,9 @@ function rechnen() {
 }
 
 function protick(){
-    for (i=2 ; i<anzahl ;i++) {
+    for (ticker=1 ; ticker<anzahl ; ticker++) {
         rechnen()
-        Game.Sp.geld[i] = Game.Sp.geld[i].mul(Game.prosek[i])
+        Game.Sp.geld[ticker] = Game.Sp.geld[ticker].mul(Game.prosek[ticker])
         TextAktu()
     }
 }
