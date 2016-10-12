@@ -16,8 +16,10 @@ $(document).ready(function(){
         uiv.anzeigen[i] =$('<p id="anzeige'+i+'"> 123 </p>')
         uiv.levinh[i].append(uiv.anzeigen[i])
         uiv.KnopfA[i] =$('<button id="KnopfA'+i+'" class="Knopf" onclick="kauf('+i+')">Buy 1/50%More</button> ')
+        if (i != 1)
         uiv.levinh[i].append(uiv.KnopfA[i])
         uiv.preisanzeigen[i] = $('<span id="pAnzeige'+i+'"> Preis: </span>')
+        if (i != 1)
         uiv.levinh[i].append(uiv.preisanzeigen[i])
 }
     
