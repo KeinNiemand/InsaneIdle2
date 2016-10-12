@@ -43,5 +43,5 @@ for (i = 1; i <= anzahl; i++) {
     //PREIS ERHÖUNGS FORMEL
     Game.preiserh[i] = Decimal(Decimal.mul(1.2,i).pow(1.6).add(1))
     Game.preis[i] = Game.basPreis[i]
-    Game.produmul[i] = Decimal(0.01)
+    Game.produmul[i] = Decimal(0.0001)
 }
