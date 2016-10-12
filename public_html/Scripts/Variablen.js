@@ -38,7 +38,7 @@ for (i = 1; i <= anzahl; i++) {
     Game.prosek[i] = Decimal(0)
     //Game.basPreis[i] = Decimal(Math.pow(1+((i*0.1)-0.2), 66.66) * 100)
     //BASIS PREIS FORMEL
-    Game.basPreis[i] = Decimal(Decimal.pow(Decimal.mul(i,0.1).sub(0.2).add(1), 88.66).mul(2))
+    Game.basPreis[i] = Decimal(Decimal.pow(Decimal.mul(i,0.1).sub(0.2).add(1), 80.66).mul(2))
     //Game.preiserh[i] = Decimal(1+(1.5*i)^1.8)
     //PREIS ERHÖUNGS FORMEL
     Game.preiserh[i] = Decimal(Decimal.mul(1.4,i).pow(1.7).add(1))
