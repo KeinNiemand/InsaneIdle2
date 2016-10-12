@@ -5,7 +5,7 @@
  */
 
 function init() {
-    Game.Sp.geld[1] = Decimal(101);
+    Game.Sp.geld[1] = Decimal(26);
 }
 
 $(document).ready(function(){
