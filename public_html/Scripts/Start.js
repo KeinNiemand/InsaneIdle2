@@ -6,12 +6,14 @@
 
 function init() {
     Game.Sp.geld[1] = Decimal(10);
+    Laden()
 }
 
 $(document).ready(function(){
     init();
     TextAktu()
     setInterval(protick, 1000/TPS)
+    setInterval(Speichern, 10000)
 });
 
 
