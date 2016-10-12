@@ -19,8 +19,8 @@ function Laden() {
 
 function DecimalWerteKonvertieren() {
     for (konv=1;konv<=anzahl;konv++) {
-        Game.Sp.anzGek[i] = Decimal.fromJSON(Game.Sp.anzGek[i]);
-        Game.Sp.geld[i] = Decimal.fromJSON(Game.Sp.geld[i]);
+        Game.Sp.anzGek[konv] = Decimal.fromJSON(Game.Sp.anzGek[konv]);
+        Game.Sp.geld[konv] = Decimal.fromJSON(Game.Sp.geld[konv]);
     }
 }
 
