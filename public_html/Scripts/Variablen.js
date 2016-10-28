@@ -16,7 +16,8 @@ var uiv = {
     levinh: [anzahl],
     anzeigen: [anzahl],
     KnopfA: [anzahl],
-    preisanzeigen: []
+    preisanzeigen: [],
+    produkanzeigen: []
 };
 
 var Game = {

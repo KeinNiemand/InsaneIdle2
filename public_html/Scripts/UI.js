@@ -13,7 +13,7 @@ $(document).ready(function(){
         uiv.main.append(uiv.levels[i])
         uiv.levinh[i] = $('<div id="levelinh'+ 0 +'"></div>')
         uiv.main.append(uiv.levinh[i])
-        uiv.anzeigen[i] =$('<p id="anzeige'+i+'"> 123 </p>')
+        uiv.anzeigen[i] =$('<div id="anzeige'+i+'"> 123 </div>')
         uiv.levinh[i].append(uiv.anzeigen[i])
         uiv.KnopfA[i] =$('<button id="KnopfA'+i+'" class="Knopf" onclick="kauf('+i+')">Buy 1/50%More</button> ')
         if (i != 1)
@@ -21,6 +21,8 @@ $(document).ready(function(){
         uiv.preisanzeigen[i] = $('<span id="pAnzeige'+i+'"> Preis: </span>')
         if (i != 1)
         uiv.levinh[i].append(uiv.preisanzeigen[i])
+        uiv.produkanzeigen[i] = $("<div id='produktanzeige"+i+"'> your lvl"+i+" get's multiplyed by xxx Pt </div>");
+        uiv.levinh[i].append(uiv.produkanzeigen[i]);
 }
     
     uiv.main.accordion();
@@ -35,6 +37,7 @@ function TextAktu() {
     for (i=1; i<=anzahl;i++) {
         $("#anzeige"+i).text(Game.Sp.geld[i].toPrecision(3) + 'lvl' +i);
         $("#pAnzeige"+i).text("Price:" + Game.preis[i].toPrecision(3) + ' lvl1');
+        $("#produktanzeige"+i).text("your lvl"+i+" get's multiplyed by "+Game.prosek[i].toPrecision(6)+" Pt")
         uiv.anzeigen[0]
     }
 }
