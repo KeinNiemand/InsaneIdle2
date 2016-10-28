@@ -4,13 +4,10 @@
  * and open the template in the editor.
  */
 
-function init() {
-    Game.Sp.geld[1] = Decimal(10);
-    Laden()
-}
 
 $(document).ready(function(){
-    init();
+    Game.Sp.geld[1] = Decimal(25);
+    Laden()
     TextAktu()
     setInterval(protick, 1000/TPS)
     setInterval(Speichern, 10000)
