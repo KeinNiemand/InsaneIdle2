@@ -32,6 +32,18 @@ and open the template in the editor.
         <script type="text/javascript" src="Libs/jquery-3.1.0.js"> </script>
         <script type="text/javascript" src="Libs/jquery-ui-1.12.1/jquery-ui.js">
         </script>
+        <script src='https://cdn1.kongregate.com/javascripts/kongregate_api.js'></script>
+        <script>
+            // Load the API
+            var kongregate;
+            kongregateAPI.loadAPI(onComplete);
+
+            // Callback function
+            function onComplete(){
+              // Set the global kongregate API object
+             kongregate = kongregateAPI.getAPI();
+             }
+        </script>
         <script type="text/javascript" src="Libs/decimal.js"> </script>
         <script type="text/javascript" src="Scripts/Variablen.js"> </script>
         <script type="text/javascript" src="Scripts/UI.js"> </script> 
