@@ -9,8 +9,9 @@ $(document).ready(function(){
     Game.Sp.geld[1] = Decimal(25);
     Laden()
     TextAktu()
-    setInterval(protick, 1000/TPS)
-    setInterval(Speichern, 10000)
+    setInterval(protick, 1000/TPS);
+    setInterval(Speichern, 10000);
+    setInterval(statakt, 10000);
 });
 
 
