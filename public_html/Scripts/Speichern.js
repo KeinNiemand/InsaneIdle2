@@ -12,7 +12,12 @@ function Laden() {
     if (!localStorage["InsaneIdle2S"]) return;
     var save_data = JSON.parse(atob(localStorage["InsaneIdle2S"]));
     Game.Sp = save_data;
-	DecimalWerteKonvertieren()
+    if (Game.Sp.savever == null || Game.Sp.savever == 0) {
+        Game.Sp.savever=0
+        DecimalWerteKonvertieren()
+    }
+    else
+        initvars()
 	rechnen()
 	TextAktu()
 }

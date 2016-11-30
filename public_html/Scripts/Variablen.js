@@ -24,7 +24,8 @@ var uiv = {
 var Game = {
     Sp: {
         geld: [],
-        anzGek: []
+        anzGek: [],
+        savever: 0
     },
     basPreis: [],
     preiserh: [],
