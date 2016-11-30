@@ -17,7 +17,8 @@ var uiv = {
     anzeigen: [anzahl],
     KnopfA: [anzahl],
     preisanzeigen: [],
-    produkanzeigen: []
+    produkanzeigen: [],
+    options: $("#Options")
 };
 
 var Game = {
