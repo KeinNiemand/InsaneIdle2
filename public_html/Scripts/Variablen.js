@@ -44,10 +44,10 @@ function initvars() {
     Game.basPreis[i] = Decimal(Decimal.pow(Decimal.mul(i,0.1).sub(0.2).add(1), 186.66).mul(2))
     //Game.preiserh[i] = Decimal(1+(1.5*i)^1.8)
     //PREIS ERHÖUNGS FORMEL
-    Game.preiserh[i] = Decimal(Decimal.mul(1.1,i).pow(1.7).add(1))
+    Game.preiserh[i] = Decimal(Decimal.mul(0.7,i).pow(1.3).add(1))
     Game.preis[i] = Game.basPreis[i]
     Game.produmul[i] = Decimal(0.0001)
 }    
 //Startgeld
-   Game.Sp.geld[1] = Decimal(25);
+   Game.Sp.geld[1] = Decimal(40);
 }
