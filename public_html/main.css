@@ -12,6 +12,8 @@ body{
     padding: 0px;
     margin:  0px;
     font-size: 13.5pt;
+    background-image: url("img/Background.png")
+    
 }
 
 nav{
@@ -24,6 +26,7 @@ nav>*{
     border: 2px;
     border-style: solid;
     border-radius: 8px;
+    background-color:green;
 }
 
 button{
