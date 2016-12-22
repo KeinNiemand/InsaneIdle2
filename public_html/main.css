@@ -8,12 +8,12 @@ and open the template in the editor.
     Author     : KeinNiemand
 */
 body{
-    background-color: chartreuse;
+    background-color: green;
     padding: 0px;
     margin:  0px;
     font-size: 13.5pt;
-    background-image: url("img/Background.png")
-    
+    background-image: url("img/Background.png");
+    font-size: 16pt;
 }
 
 nav{
@@ -32,6 +32,7 @@ nav>*{
 
 button{
     border-radius: 11px;
+    font-size: 14pt;
 }
 
 .levels{
@@ -52,5 +53,5 @@ button{
     border-style: solid;
     border-width: 1px;
     border-top-style:none;
-    font-size: 16pt;
+    
 }
