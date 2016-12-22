@@ -13,7 +13,7 @@ body{
     margin:  0px;
     font-size: 13.5pt;
     background-image: url("img/Background.png");
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 nav{
@@ -32,7 +32,7 @@ nav>*{
 
 button{
     border-radius: 11px;
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 .levels{
@@ -43,7 +43,7 @@ button{
     padding: 3px;
     margin: 10px;
     margin-bottom: 0px;
-    font-size : 24pt;   
+    font-size : 23pt;   
 }
 
 .levelinh{
