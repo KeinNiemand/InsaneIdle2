@@ -40,5 +40,12 @@ button{
     border-style: solid;
     padding: 3px;
     margin: 10px;
+    margin-bottom: 0px
        
+}
+
+.levelinh{
+    background-color: white;
+    padding: 5px;
+    margin: px;
 }
