@@ -53,5 +53,6 @@ button{
     border-style: solid;
     border-width: 1px;
     border-top-style:none;
-    
+    margin-left: 10px;
+    margin-right: 10px;
 }
