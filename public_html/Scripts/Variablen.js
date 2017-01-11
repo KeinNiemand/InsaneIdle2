@@ -46,10 +46,10 @@ function initvars() {
     Game.protickMul[i] = Decimal(0);
     //Game.basPreis[i] = Decimal(Math.pow(1+((i*0.1)-0.2), 66.66) * 100)
     //BASIS PREIS FORMEL
-    Game.basPreis[i] = Decimal(Decimal.pow(Decimal.mul(i,0.1).sub(0.2).add(1), 186.66).mul(2));
+    Game.basPreis[i] = Decimal(Decimal.pow(Decimal.mul(i,0.1).add(0.8), 176.66).mul(2));
     //Game.preiserh[i] = Decimal(1+(1.5*i)^1.8)
     //PREIS ERHÖUNGS FORMEL
-    Game.preiserh[i] = Decimal(Decimal.mul(0.7,i).pow(1.3).add(1));
+    Game.preiserh[i] = Decimal.mul(0.4,i).add(1).pow(1.4);
     Game.preis[i] = Game.basPreis[i];
     Game.Sp.produmul[i] = Decimal(0.0001);
 }    

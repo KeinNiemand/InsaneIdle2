@@ -49,7 +49,7 @@ function TextAktu() {
     for (i=1; i<=anzahl;i++) {
         $("#anzeige"+i).text(Game.Sp.geld[i].toPrecision(3) + 'lvl' +i);
         $("#pAnzeige"+i).text("Price:" + Game.preis[i].toPrecision(3) + ' lvl1');
-        $("#produktanzeige"+i).text("you get "+Game.protick[i].toPrecision(3)+" lvl "+i+" Pt")
+        $("#produktanzeige"+i).text("you get "+Game.protick[i].mul(TPS).toPrecision(3)+" lvl "+i+" Ps")
         uiv.anzeigen[0]
     }
 }
