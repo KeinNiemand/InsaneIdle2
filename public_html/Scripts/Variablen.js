@@ -25,12 +25,13 @@ var Game = {
     Sp: {
         geld: [],
         anzGek: [],
-        savever: 0
+        savever: 0,
+        produmul: [],
+        wurzel: 2
     },
     basPreis: [],
     preiserh: [],
     preis: [],
-    produmul: [],
     prosek: []
 };
 
@@ -51,4 +52,5 @@ function initvars() {
 }    
 //Startgeld
    Game.Sp.geld[1] = Decimal(40);
+   Game.Sp.wurzel = 2
 }
