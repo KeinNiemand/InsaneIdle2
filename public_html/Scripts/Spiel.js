@@ -26,7 +26,7 @@ function kauf(nummer) {
 function rechnen() {
     for (i=1; i<=anzahl ;i++) {
         if (i < anzahl)
-        Game.protickMul[i] = Game.Sp.geld[i+1].mul(Game.Sp.produmul[i]).add(1);
+        Game.protickMul[i] = Game.Sp.geld[i+1].mul(Game.Sp.produmul[i]);
         Game.protick[i] = Game.protickMul[i].mul(Game.Sp.geld[i]).sqrt();
         Game.preis[i] = Game.basPreis[i].mul(Game.preiserh[i].pow(Game.Sp.anzGek[i]));
     };
@@ -35,7 +35,7 @@ function rechnen() {
 function protick(){
     for (ticker=1 ; ticker<anzahl ; ticker++) {
         rechnen()
-        Game.Sp.geld[ticker] = Game.Sp.geld[ticker].add(Game.protick);
+        Game.Sp.geld[ticker] = Game.Sp.geld[ticker].add(Game.protick[ticker]);
         TextAktu()
     }
 }
