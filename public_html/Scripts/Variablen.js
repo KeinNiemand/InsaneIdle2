@@ -27,7 +27,6 @@ var Game = {
         anzGek: [],
         savever: 0,
         produmul: [],
-        wurzel: 2
     },
     basPreis: [],
     preiserh: [],
