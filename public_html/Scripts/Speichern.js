@@ -6,14 +6,17 @@
 
 function Speichern() {
    localStorage["InsaneIdle2S"] = btoa(JSON.stringify(Game.Sp));
+   localStorage["InsaneIdle2S" + "ver"] = btoa(JSON.stringify(Game.savever))
 }
 
 function Laden() {
-    if (!localStorage["InsaneIdle2S"]) return;
-    var save_data = JSON.parse(atob(localStorage["InsaneIdle2S"]));
-    Game.Sp = save_data;
-    if (Game.Sp.savever == null || Game.Sp.savever == 0) {
-        Game.Sp.savever=0
+    if (!localStorage["InsaneIdle2S" + "ver"]) return;
+    var save_data_ver = JSON.parse(atob(localStorage["InsaneIdle2S" + "ver"]));
+    Game.savever = save_data_ver;
+    if (Game.Sp.savever === savever) {
+        if (!localStorage["InsaneIdle2S"]) return;
+        var save_data = JSON.parse(atob(localStorage["InsaneIdle2S"]));
+        Game.Sp = save_data;
         DecimalWerteKonvertieren()
     }
     else
@@ -21,6 +24,9 @@ function Laden() {
 	rechnen()
 	TextAktu()
 }
+    
+
+    
 
 function DecimalWerteKonvertieren() {
     for (konv=1;konv<=anzahl;konv++) {

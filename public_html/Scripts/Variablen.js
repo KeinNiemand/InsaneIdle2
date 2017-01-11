@@ -8,6 +8,7 @@
 var anzahl = 5;
 var TPS = 30;
 Decimal.config({ precision: 12 })
+var savever = 1;
 
 var uiv = {
     haupt: $("#Haupt"),
@@ -25,15 +26,16 @@ var Game = {
     Sp: {
         geld: [],
         anzGek: [],
-        savever: 0,
-        produmul: [],
+        produmul: []
     },
     basPreis: [],
     preiserh: [],
     preis: [],
     protick: [],
+    savever: savever,
     protickMul: []
 };
+
 
 //Initialiesierung der Variablen
 function initvars() {
@@ -49,7 +51,7 @@ function initvars() {
     //PREIS ERHÖUNGS FORMEL
     Game.preiserh[i] = Decimal(Decimal.mul(0.7,i).pow(1.3).add(1));
     Game.preis[i] = Game.basPreis[i];
-    Game.produmul[i] = Decimal(0.0001);
+    Game.Sp.produmul[i] = Decimal(0.0001);
 }    
 //Startgeld
    Game.Sp.geld[1] = Decimal(40);
