@@ -33,7 +33,7 @@ function rechnen() {
 }
 
 function protick(modi){
-    for (ticker=1 ; ticker<anzahl ; ticker++) {
+    for (ticker=anzahl ; ticker>0 ; ticker--) {
         modi = modi || 1
         rechnen()
         Game.Sp.geld[ticker] = Game.Sp.geld[ticker].add(Game.protick[ticker].mul(modi));
