@@ -32,10 +32,11 @@ function rechnen() {
     };
 }
 
-function protick(){
+function protick(modi){
     for (ticker=1 ; ticker<anzahl ; ticker++) {
+        modi = modi || 1
         rechnen()
-        Game.Sp.geld[ticker] = Game.Sp.geld[ticker].add(Game.protick[ticker]);
+        Game.Sp.geld[ticker] = Game.Sp.geld[ticker].add(Game.protick[ticker].mul(modi));
         TextAktu()
     }
 }
