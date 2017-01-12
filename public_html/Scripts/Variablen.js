@@ -56,6 +56,6 @@ function initvars() {
     Game.Sp.produmul[i] = Decimal(0.0001);
 }    
 //Startgeld
-   Game.Sp.geld[1] = Decimal(30);
+   Game.Sp.geld[1] = Decimal(20);
    Game.savever = savever;
 }
