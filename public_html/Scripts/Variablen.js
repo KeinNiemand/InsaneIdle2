@@ -26,7 +26,8 @@ var Game = {
     Sp: {
         geld: [],
         anzGek: [],
-        produmul: []
+        produmul: [],
+        lastUpdate: new Date().getTime()
     },
     basPreis: [],
     preiserh: [],
