@@ -8,7 +8,7 @@
 var anzahl = 5;
 var TPS = 30;
 Decimal.config({ precision: 12 })
-var savever = 1;
+var savever = 2;
 
 var uiv = {
     haupt: $("#Haupt"),
