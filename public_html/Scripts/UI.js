@@ -51,6 +51,9 @@ function TextAktu() {
         $("#pAnzeige"+i).text("Price:" + Game.preis[i].toPrecision(3) + ' lvl1');
         $("#produktanzeige"+i).text("you get "+Game.protick[i].mul(TPS).toPrecision(3)+" lvl "+i+" Ps")
         uiv.anzeigen[0]
+        if (Game.Sp.geld[1].gt(Game.preis[i]))
+            $("#KnopfA"+i).css("background-color", "silver")
+        else 
+            $("#KnopfA"+i).css("background-color", "grey")
     }
 }
-
