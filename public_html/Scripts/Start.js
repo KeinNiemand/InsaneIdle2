@@ -6,6 +6,7 @@
 
 
 $(document).ready(function(){
+    generateMain()
     initvars()
     Laden()
     TextAktu()

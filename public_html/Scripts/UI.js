@@ -28,6 +28,7 @@ function generateMain() {
         uiv.levinh[i].append(uiv.gekauftanzeige[i]);
 }
 }
+//Options Tab is not Open from start
     uiv.options.slideUp();
     //Hiding lvl1 bought counter
     $("#gekauftanzeige1").hide()
