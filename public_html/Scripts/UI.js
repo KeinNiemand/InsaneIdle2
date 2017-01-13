@@ -29,6 +29,7 @@ function generateMain() {
     }
 }
 function generateUpgrades(){
+    uiv.Upgrades.upgr = $("#Upgr")
     for (u = 1; u<= anzahl; u++) {
         uiv.Upgrades.levels[u] = $('<h1 id="upgrLevel' + u + '" class="levels">Upgrade lvl'+u+' </h1>');
         uiv.Upgrades.upgr.append(uiv.Upgrades.levels[u]);
