@@ -6,7 +6,7 @@
 
 //UI Initialiesierung
 
-
+function generateMain() {
     uiv.main = $("#Main")
     for (i = 1; i <= anzahl; i++) { 
         
@@ -27,24 +27,28 @@
         uiv.gekauftanzeige[i] = $("<div id='gekauftanzeige"+i+"'> </div>");
         uiv.levinh[i].append(uiv.gekauftanzeige[i]);
 }
+}
     uiv.options.slideUp();
     //Hiding lvl1 bought counter
     $("#gekauftanzeige1").hide()
-
-                 $('.levels').on('click', function() {
-                 $(this).next('.levelinh').slideToggle();
+    //Lvl menu extender
+    $('.levels').on('click', function() {
+    $(this).next('.levelinh').slideToggle();
                 });
-    $("nav>*:first").click(function() {
+//Nav Main Button Click    
+$("nav>*:first").click(function() {
       uiv.main.slideToggle();
       uiv.options.slideUp();
-    })
-    $("*").css("font-family" , "Segoe UI Semibold,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue Frutiger, Verdana");
-    $("#Main").css("font-family" , "Segoe UI,Frutiger Linotype,Dejavu Sans,Helvetica Neue Frutiger, Verdana");
-    uiv.options.css("font-family" , "Segoe UI,Frutiger Linotype,Dejavu Sans,Helvetica Neue Frutiger, Verdana");
-    $("#NavOpt").click(function() {
+})
+//Nav Option Button Click  
+$("#NavOpt").click(function() {
       uiv.main.slideUp();
       uiv.options.slideToggle();
-    })
+})
+//Schriftart Setzen
+$("*").css("font-family" , "Segoe UI Semibold,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue Frutiger, Verdana");
+$("#Main").css("font-family" , "Segoe UI,Frutiger Linotype,Dejavu Sans,Helvetica Neue Frutiger, Verdana");
+uiv.options.css("font-family" , "Segoe UI,Frutiger Linotype,Dejavu Sans,Helvetica Neue Frutiger, Verdana");
 
 
 function TextAktu() {
