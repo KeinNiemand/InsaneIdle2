@@ -9,6 +9,7 @@ var anzahl = 5;
 var TPS = 30;
 Decimal.config({ precision: 12 })
 var savever = 2;
+var upgradeanzahl = 2;
 
 var uiv = {
     haupt: $("#Haupt"),
@@ -37,14 +38,17 @@ var Game = {
         geld: [],
         anzGek: [],
         produmul: [],
-        lastUpdate: new Date().getTime()
+        lastUpdate: new Date().getTime(),
+        upgradeGek: [[], []]
     },
     basPreis: [],
     preiserh: [],
     preis: [],
     protick: [],
     savever: savever,
-    protickMul: []
+    protickMul: [],
+    upgradeEfekt: [],
+    upgradePrice: [[], []]    
 };
 
 
@@ -63,6 +67,10 @@ function initvars() {
     Game.preiserh[i] = Decimal.mul(0.4,i).add(1).pow(1.4);
     Game.preis[i] = Game.basPreis[i];
     Game.Sp.produmul[i] = Decimal(0.0001);
+    Game.upgradeEfekt[i] = Decimal.mul(0.75*1.5, Decimal(1.5).pow(i))
+    for (u = 1; u <= upgradeanzahl; u++) {
+        
+    }
 }    
 //Startgeld
    Game.Sp.geld[1] = Decimal(20);
