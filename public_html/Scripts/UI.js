@@ -28,7 +28,7 @@ function generateMain() {
         uiv.levinh[i].append(uiv.gekauftanzeige[i]);
     }
 }
-function generateUpgrades(){
+function generateUpgradesUI(){
     uiv.Upgrades.upgr = $("#Upgr")
     for (u = 1; u<= anzahl; u++) {
         uiv.Upgrades.levels[u] = $('<h1 id="upgrLevel' + u + '" class="levels">Upgrade lvl'+u+' </h1>');
