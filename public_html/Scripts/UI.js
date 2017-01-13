@@ -26,14 +26,18 @@ function generateMain() {
         uiv.levinh[i].append(uiv.produkanzeigen[i]);
         uiv.gekauftanzeige[i] = $("<div id='gekauftanzeige"+i+"'> </div>");
         uiv.levinh[i].append(uiv.gekauftanzeige[i]);
+    }
 }
 function generateUpgrades(){
     for (u = 1; u<= anzahl; u++) {
         uiv.Upgrades.levels[u] = $('<h1 id="upgrLevel' + u + '" class="levels">Upgrade lvl'+u+' </h1>');
-        uiv.Upgrades.upgr.append(uiv.Upgrades.levels[u])
+        uiv.Upgrades.upgr.append(uiv.Upgrades.levels[u]);
+        uiv.Upgrades.levinh[u] = $("<div class='levelinh'></div>");
+        uiv.Upgrades.upgr.append(uiv.Upgrades.levinh[u]);
+        
     }
-}
-}
+    }
+
 //Options Tab is not Open from start
     uiv.options.slideUp();
     //Hiding lvl1 bought counter
