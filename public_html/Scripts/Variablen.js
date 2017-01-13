@@ -20,7 +20,16 @@ var uiv = {
     preisanzeigen: [],
     produkanzeigen: [],
     options: $("#Options"),
-    gekauftanzeige: []
+    gekauftanzeige: [],
+    upgrades: {
+        upgr : $("#upgr"),
+        levels: [],
+        levinh: [],
+        kaufKnopf: [],
+        gekauftanzeige: [],
+        produkmulanzeige: []
+    }
+    
 };
 
 var Game = {
