@@ -7,6 +7,7 @@
 
 $(document).ready(function(){
     generateMain()
+    generateUpgrades()
     initvars()
     Laden()
     TextAktu()

@@ -34,6 +34,9 @@ function generateUpgrades(){
         uiv.Upgrades.upgr.append(uiv.Upgrades.levels[u]);
         uiv.Upgrades.levinh[u] = $("<div class='levelinh'></div>");
         uiv.Upgrades.upgr.append(uiv.Upgrades.levinh[u]);
+        uiv.Upgrades.produkmulanzeige[u] = $("<span class='produmulanz'"+u+">Error</span>");
+        uiv.Upgrades.levinh[u].append(uiv.Upgrades.produkmulanzeige[u]);
+        
         
     }
     }
