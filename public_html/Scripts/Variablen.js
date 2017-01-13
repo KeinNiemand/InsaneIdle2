@@ -21,7 +21,7 @@ var uiv = {
     produkanzeigen: [],
     options: $("#Options"),
     gekauftanzeige: [],
-    upgrades: {
+    Upgrades: {
         upgr : $("#upgr"),
         levels: [],
         levinh: [],
