@@ -5,7 +5,7 @@
  */
 
 //UI Initialiesierung
-$(document).ready(function(){
+
 
     uiv.main = $("#Main")
     for (i = 1; i <= anzahl; i++) { 
@@ -45,7 +45,7 @@ $(document).ready(function(){
       uiv.main.slideUp();
       uiv.options.slideToggle();
     })
-})
+
 
 function TextAktu() {
     for (i=1; i<=anzahl;i++) {
