@@ -53,7 +53,7 @@ function initvars() {
     //PREIS ERHÖUNGS FORMEL
     Game.preiserh[i] = Decimal.mul(0.4,i).add(1).pow(1.4);
     Game.preis[i] = Game.basPreis[i];
-    Game.Sp.produmul[i] = Decimal(0.0001);
+    Game.Sp.produmul[i] = Decimal(0.001);
 }    
 //Startgeld
    Game.Sp.geld[1] = Decimal(20);
