@@ -58,4 +58,5 @@ function initvars() {
 //Startgeld
    Game.Sp.geld[1] = Decimal(20);
    Game.savever = savever;
+   Game.BasSp = Game.Sp;
 }
