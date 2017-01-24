@@ -72,7 +72,7 @@ function initvars() {
     Game.Sp.produmul[i] = Decimal(0.001);
     //Upgrade Stuff 
     for (iu = 0; iu < upgradeanzahl; iu++) {
-        Game.upgradeEfekt[iu] = Decimal.mul(0.75, Decimal(1.5).pow(i-1));
+        Game.upgradeEfekt[iu] = Decimal.mul(0.75, Decimal(1.5).pow(iu));
         Game.Sp.upgradeGek[[i],[iu]] = Decimal(0);
         //Upgrade BasPreis Formel
         Game.upgradeBasPreis[[i], [iu]] = Decimal.pow(Decimal.mul(i, Decimal.mul(iu+1 , 0.1)).add(0.8), 166+iu*i*0.1).mul(100);

@@ -35,14 +35,14 @@ function generateUpgradesUI(){
         uiv.Upgrades.upgr.append(uiv.Upgrades.levels[u]);
         uiv.Upgrades.levinh[u] = $("<div class='levelinh'></div>");
         uiv.Upgrades.upgr.append(uiv.Upgrades.levinh[u]);
-        uiv.Upgrades.produkmulanzeige[u] = $("<p class='produmulanz'"+u+">Error1</p>");
+        uiv.Upgrades.produkmulanzeige[u] = $("<p id='produmulanz"+u+"'>Error1</p>");
         uiv.Upgrades.levinh[u].append(uiv.Upgrades.produkmulanzeige[u]);
         for (u2 = 0; u2<upgradeanzahl; u2++){
             uiv.Upgrades.kaufKnopf[[u], [u2]] = $("<button id='upgrkn"+u+"S"+u2+"'>Error2</button>");
             uiv.Upgrades.levinh[u].append(uiv.Upgrades.kaufKnopf[[u], [u2]]);
-            uiv.Upgrades.preisanzeige[[u], [u2]] = $("<span id='upgrpreisanz'"+u+"S"+u2+">Error3</span>");
+            uiv.Upgrades.preisanzeige[[u], [u2]] = $("<span id='upgrpreisanz"+u+"S"+u2+"'>Error3</span>");
             uiv.Upgrades.levinh[u].append(uiv.Upgrades.preisanzeige[[u],[u2]])
-            uiv.Upgrades.gekauftanzeige[[u],[u2]] = $("<span id='upgrgeksanz'"+u+"S"+u2+">Error4</span>");
+            uiv.Upgrades.gekauftanzeige[[u],[u2]] = $("<span id='upgrgeksanz"+u+"S"+u2+"'>Error4</span>");
             uiv.Upgrades.levinh[u].append(uiv.Upgrades.gekauftanzeige[[u],[u2]])
             uiv.Upgrades.levinh[u].append($("<br/>"))
             uiv.Upgrades.levinh[u].append($("<br/>"))
@@ -86,5 +86,9 @@ function TextAktu() {
             $("#KnopfA"+i).css("background-color", "silver");
         else 
             $("#KnopfA"+i).css("background-color", "grey");
+        $("#produmulanz"+i).text(Game.Sp.produmul[i].toPrecision(3))
+        for (iu=0; iu<upgradeanzahl; iu++) {
+            $("#upgrkn"+i+"S"+iu).text("Multipy your Productionmulti by "+Game.upgradeEfekt[iu].add(1).toPrecision(3))
+        }
     }
 }
