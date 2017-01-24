@@ -26,9 +26,10 @@ var uiv = {
         upgr : $("#upgr"),
         levels: [],
         levinh: [],
-        kaufKnopf: [],
-        gekauftanzeige: [],
-        produkmulanzeige: []
+        kaufKnopf: [[], []],
+        gekauftanzeige: [[],[]],
+        produkmulanzeige: [],
+        preisanzeige: [[],[]]
     }
     
 };
