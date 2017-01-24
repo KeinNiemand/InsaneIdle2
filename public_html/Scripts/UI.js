@@ -43,6 +43,8 @@ function generateUpgradesUI(){
             uiv.Upgrades.levinh[u].append(uiv.Upgrades.kaufKnopf[[u], [u2]]);
             uiv.Upgrades.preisanzeige[[u], [u2]] = $("<span id='upgrpreisanz'"+u+"S"+u2+">Error3</span>");
             uiv.Upgrades.levinh[u].append(uiv.Upgrades.preisanzeige[[u],[u2]])
+            uiv.Upgrades.gekauftanzeige[[u],[u2]] = $("<span id='upgrgeksanz'"+u+"S"+u2+">Error4</span>");
+            uiv.Upgrades.levinh[u].append(uiv.Upgrades.gekauftanzeige[[u],[u2]])
         }
         
     }
