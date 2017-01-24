@@ -86,9 +86,11 @@ function TextAktu() {
             $("#KnopfA"+i).css("background-color", "silver");
         else 
             $("#KnopfA"+i).css("background-color", "grey");
-        $("#produmulanz"+i).text(Game.Sp.produmul[i].toPrecision(3))
-        for (iu=0; iu<upgradeanzahl; iu++) {
-            $("#upgrkn"+i+"S"+iu).text("Multipy your Productionmulti by "+Game.upgradeEfekt[iu].add(1).toPrecision(3))
+        $("#produmulanz"+i).text("Produktmul: " + Game.Sp.produmul[i].toPrecision(3))
+        for (i3=0; i3<upgradeanzahl; i3++) {
+            $("#upgrkn"+i+"S"+i3).text("Multipy your Productionmulti by "+Game.upgradeEfekt[i3].add(1).toPrecision(3))
+            $("#upgrpreisanz"+i+"S"+i3).text("Price: "+ Game.upgradePreis[[i],[i3]].toPrecision(3))
+            $("#upgrgekanz"+i+"S"+i3).text("You have bought this"+ Game.Sp.upgradeGek[[1],[0]].toPrecision(3)+"times")
         }
     }
 }

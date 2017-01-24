@@ -6,9 +6,10 @@
 
 
 $(document).ready(function(){
+    initvars()
     generateMain()
     generateUpgradesUI()
-    initvars()
+    
     Laden()
     TextAktu()
     setInterval(function(){
