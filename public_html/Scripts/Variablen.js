@@ -48,7 +48,9 @@ var Game = {
     savever: savever,
     protickMul: [],
     upgradeEfekt: [],
-    upgradePrice: [[], []]    
+    upgradePreis: [[], []],
+    upgradePriceInc: [[], []],
+    upgradeBasPreis: [[], []]
 };
 
 
@@ -69,11 +71,14 @@ function initvars() {
     Game.Sp.produmul[i] = Decimal(0.001);
     //Upgrade Stuff
     //Upgrade Effekt Formula
-    Game.upgradeEfekt[i] = Decimal.mul(0.75*1.5, Decimal(1.5).pow(i))
-    for (u = 1; u <= upgradeanzahl; u++) {
-        
+    Game.upgradeEfekt[i] = Decimal.mul(0.75, Decimal(1.5).pow(i-1));
+    for (iu = 0; iu < upgradeanzahl; iu++) {
+        Game.Sp.upgradeGek[[i],[iu]] = Decimal(0);
+        //Upgrade BasPreis Formel
+        Game.upgradeBasPreis[[i], [iu]] = Decimal.pow(Decimal.mul(i, Decimal.mul(iu+1 , 0.1)).add(0.8), 166+iu*i*0.1).mul(100)
+        Game.upgradePreis[[i], [iu]] = Game.upgradeBasPreis[[i], [iu]]
     }
-}    
+   }
 //Startgeld
    Game.Sp.geld[1] = Decimal(20);
    Game.savever = savever;
