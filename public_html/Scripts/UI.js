@@ -35,9 +35,12 @@ function generateUpgradesUI(){
         uiv.Upgrades.upgr.append(uiv.Upgrades.levels[u]);
         uiv.Upgrades.levinh[u] = $("<div class='levelinh'></div>");
         uiv.Upgrades.upgr.append(uiv.Upgrades.levinh[u]);
-        uiv.Upgrades.produkmulanzeige[u] = $("<span class='produmulanz'"+u+">Error</span>");
+        uiv.Upgrades.produkmulanzeige[u] = $("<span class='produmulanz'"+u+">Error1</span>");
         uiv.Upgrades.levinh[u].append(uiv.Upgrades.produkmulanzeige[u]);
-        
+        for (u2 = 0; u2<upgradeanzahl; u2++){
+            uiv.Upgrades.kaufKnopf[[u], [u2]] = $("<button id='upgrkn"+u+"S"+u2+"'>Error</button>");
+            
+        }
         
     }
     }
