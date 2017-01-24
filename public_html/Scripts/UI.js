@@ -39,6 +39,7 @@ function generateUpgradesUI(){
         uiv.Upgrades.levinh[u].append(uiv.Upgrades.produkmulanzeige[u]);
         for (u2 = 0; u2<upgradeanzahl; u2++){
             uiv.Upgrades.kaufKnopf[[u], [u2]] = $("<button id='upgrkn"+u+"S"+u2+"'>Error</button>");
+            uiv.Upgrades.upgr.append(uiv.Upgrades.kaufKnopf[[u], [u2]]);
             
         }
         
