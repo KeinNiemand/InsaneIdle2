@@ -54,10 +54,13 @@ function generateUpgradesUI(){
     }
     }
 
-//Options Tab is not Open from start
+//Only Main Tab is Open From Start
+function initUI(){
     uiv.options.slideUp();
+    uiv.Upgrades.upgr.slideUp();
     //Hiding lvl1 bought counter
     $("#gekauftanzeige1").hide()
+    }
     //Lvl menu extender
     $('.levels').on('click', function() {
     $(this).next('.levelinh').slideToggle();
@@ -66,11 +69,19 @@ function generateUpgradesUI(){
 $("nav>*:first").click(function() {
       uiv.main.slideToggle();
       uiv.options.slideUp();
+      uiv.Upgrades.upgr.slideUp();
 })
 //Nav Option Button Click  
 $("#NavOpt").click(function() {
       uiv.main.slideUp();
       uiv.options.slideToggle();
+      uiv.Upgrades.upgr.slideUp()
+})
+//Nav Upgrade Button Click
+$("NavUpgr").click(function(){
+    uiv.main.slideUp();
+    uiv.options.slideUp();
+    uiv.Upgrades.upgr.slideToggle();
 })
 //Schriftart Setzen
 $("*").css("font-family" , "Segoe UI,Frutiger Linotype,Dejavu Sans,Helvetica Neue Frutiger, Verdana");
