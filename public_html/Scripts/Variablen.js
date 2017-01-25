@@ -8,7 +8,7 @@
 var anzahl = 5;
 var TPS = 30;
 Decimal.config({ precision: 12 })
-var savever = 3;
+var savever = 4;
 var upgradeanzahl = 2;
 
 var uiv = {
@@ -40,7 +40,7 @@ var Game = {
         anzGek: [],
         produmul: [],
         lastUpdate: new Date().getTime(),
-        upgradeGek: [[], []]
+        upgradeGek: [[]]
     },
     basPreis: [],
     preiserh: [],
@@ -49,9 +49,9 @@ var Game = {
     savever: savever,
     protickMul: [],
     upgradeEfekt: [],
-    upgradePreis: [[], []],
-    upgradePriceErh: [[], []],
-    upgradeBasPreis: [[], []]
+    upgradePreis: [[]],
+    upgradePriceErh: [[]],
+    upgradeBasPreis: [[]]
 };
 
 
@@ -73,11 +73,11 @@ function initvars() {
     //Upgrade Stuff 
     for (i1 = 0; i1 < upgradeanzahl; i1++) {
         Game.upgradeEfekt[i1] = Decimal.mul(0.75, Decimal(1.5).pow(i1));
-        Game.Sp.upgradeGek[[i], [i1]] = Decimal(0);
+        Game.Sp.upgradeGek[[i,i1]] = Decimal(0);
         //Upgrade BasPreis Formel
-        Game.upgradeBasPreis[[i], [i1]] = Decimal.pow(Decimal.mul(i, Decimal.mul(i1+1 , 0.1)).add(0.8), 166+i1*i*0.1).mul(100);
-        Game.upgradePreis[[i], [i1]] = Game.upgradeBasPreis[[i], [i1]];
-        Game.upgradePriceErh[[i], [i1]] = Decimal.mul(0.5, i).add(1).pow(1.4+i1*0.1);
+        Game.upgradeBasPreis[[i,i1]] = Decimal.pow(Decimal.mul(i, 2), 1).mul(100);
+        Game.upgradePreis[[i,i1]] = Game.upgradeBasPreis[[i], [i1]];
+        Game.upgradePriceErh[[i,i1]] = Decimal.mul(0.5, i).add(1).pow(1.4+i1*0.1);
         
     }
    }
