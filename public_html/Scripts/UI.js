@@ -41,12 +41,12 @@ function generateUpgradesUI(){
         uiv.Upgrades.preisanzeige[u] = [];
         uiv.Upgrades.gekauftanzeige[u] = [];
         for (u2 = 0; u2<upgradeanzahl; u2++){
-            uiv.Upgrades.kaufKnopf[[u][u2]] = $("<button id='upgrkn"+u+"S"+u2+"'>Error2</button>");
-            uiv.Upgrades.levinh[u].append(uiv.Upgrades.kaufKnopf[[[u][u2]]]);
-            uiv.Upgrades.preisanzeige[[u][u2]] = $("<span id='upgrpreisanz"+u+"S"+u2+"'>Error3</span>");
-            uiv.Upgrades.levinh[u].append(uiv.Upgrades.preisanzeige[[[u][u2]]])
-            uiv.Upgrades.gekauftanzeige[[u][u2]] = $("<span id='upgrgeksanz"+u+"S"+u2+"'>Error4</span>");
-            uiv.Upgrades.levinh[u].append(uiv.Upgrades.gekauftanzeige[[[u][u2]]])
+            uiv.Upgrades.kaufKnopf[u][u2] = $("<button id='upgrkn"+u+"S"+u2+"'>Error2</button>");
+            uiv.Upgrades.levinh[u].append(uiv.Upgrades.kaufKnopf[u][u2]);
+            uiv.Upgrades.preisanzeige[u][u2] = $("<span id='upgrpreisanz"+u+"S"+u2+"'>Error3</span>");
+            uiv.Upgrades.levinh[u].append(uiv.Upgrades.preisanzeige[u][u2])
+            uiv.Upgrades.gekauftanzeige[u][u2] = $("<span id='upgrgeksanz"+u+"S"+u2+"'>Error4</span>");
+            uiv.Upgrades.levinh[u].append(uiv.Upgrades.gekauftanzeige[u][u2])
             uiv.Upgrades.levinh[u].append($("<br/>"))
             uiv.Upgrades.levinh[u].append($("<br/>"))
         }
