@@ -38,12 +38,12 @@ function generateUpgradesUI(){
         uiv.Upgrades.produkmulanzeige[u] = $("<p id='produmulanz"+u+"'>Error1</p>");
         uiv.Upgrades.levinh[u].append(uiv.Upgrades.produkmulanzeige[u]);
         for (u2 = 0; u2<upgradeanzahl; u2++){
-            uiv.Upgrades.kaufKnopf[[u], [u2]] = $("<button id='upgrkn"+u+"S"+u2+"'>Error2</button>");
-            uiv.Upgrades.levinh[u].append(uiv.Upgrades.kaufKnopf[[u], [u2]]);
-            uiv.Upgrades.preisanzeige[[u], [u2]] = $("<span id='upgrpreisanz"+u+"S"+u2+"'>Error3</span>");
-            uiv.Upgrades.levinh[u].append(uiv.Upgrades.preisanzeige[[u],[u2]])
-            uiv.Upgrades.gekauftanzeige[[u],[u2]] = $("<span id='upgrgeksanz"+u+"S"+u2+"'>Error4</span>");
-            uiv.Upgrades.levinh[u].append(uiv.Upgrades.gekauftanzeige[[u],[u2]])
+            uiv.Upgrades.kaufKnopf[[u,u2]] = $("<button id='upgrkn"+u+"S"+u2+"'>Error2</button>");
+            uiv.Upgrades.levinh[u].append(uiv.Upgrades.kaufKnopf[[[u,u2]]]);
+            uiv.Upgrades.preisanzeige[[u, u2]] = $("<span id='upgrpreisanz"+u+"S"+u2+"'>Error3</span>");
+            uiv.Upgrades.levinh[u].append(uiv.Upgrades.preisanzeige[[[u,u2]]])
+            uiv.Upgrades.gekauftanzeige[[u,u2]] = $("<span id='upgrgeksanz"+u+"S"+u2+"'>Error4</span>");
+            uiv.Upgrades.levinh[u].append(uiv.Upgrades.gekauftanzeige[[[u,u2]]])
             uiv.Upgrades.levinh[u].append($("<br/>"))
             uiv.Upgrades.levinh[u].append($("<br/>"))
         }
@@ -89,8 +89,8 @@ function TextAktu() {
         $("#produmulanz"+i).text("Produktmul: " + Game.Sp.produmul[i].toPrecision(3))
         for (i3=0; i3<upgradeanzahl; i3++) {
             $("#upgrkn"+i+"S"+i3).text("Multipy your Productionmulti by "+Game.upgradeEfekt[i3].add(1).toPrecision(3))
-            $("#upgrpreisanz"+i+"S"+i3).text("Price: "+ Game.upgradePreis[[i],[i3]].toPrecision(3))
-            $("#upgrgeksanz"+i+"S"+i3).text("  You have bought this"+ Game.Sp.upgradeGek[[i],[i3]].toPrecision(3)+"times")
+            $("#upgrpreisanz"+i+"S"+i3).text("Price: "+ Game.upgradePreis[[i,i3]].toPrecision(3))
+            $("#upgrgeksanz"+i+"S"+i3).text("  You have bought this"+ Game.Sp.upgradeGek[[i,i3]].toPrecision(3)+"times")
         }
     }
 }
