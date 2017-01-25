@@ -89,7 +89,7 @@ function TextAktu() {
         $("#produmulanz"+i).text("Produktmul: " + Game.Sp.produmul[i].toPrecision(3))
         for (i3=0; i3<upgradeanzahl; i3++) {
             $("#upgrkn"+i+"S"+i3).text("Multipy your Productionmulti by "+Game.upgradeEfekt[i3].add(1).toPrecision(3))
-            $("#upgrpreisanz"+i+"S"+i3).text("Price: "+ Game.upgradePreis[[i,i3]].toPrecision(3))
+            $("#upgrpreisanz"+i+"S"+i3).text("Price: "+ Game.upgradePreis[i][i3].toPrecision(3))
             $("#upgrgeksanz"+i+"S"+i3).text("  You have bought this"+ Game.Sp.upgradeGek[i][i3].toPrecision(3)+"times")
         }
     }

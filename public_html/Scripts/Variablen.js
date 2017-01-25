@@ -70,15 +70,18 @@ function initvars() {
     Game.preiserh[i] = Decimal.mul(0.4,i).add(1).pow(1.4);
     Game.preis[i] = Game.basPreis[i];
     Game.Sp.produmul[i] = Decimal(0.001);
-    Game.Sp.upgradeGek[i] = []
+    Game.Sp.upgradeGek[i] = [];
+    Game.upgradePreis[i] = [];
+    Game.upgradeBasPreis[i] = [];
+    Game.upgradePriceErh[i] = [];
     //Upgrade Stuff 
     for (i1 = 0; i1 < upgradeanzahl; i1++) {
         Game.upgradeEfekt[i1] = Decimal.mul(0.75, Decimal(1.5).pow(i1));
         Game.Sp.upgradeGek[i][i1] = Decimal(0);
         //Upgrade BasPreis Formel
-        Game.upgradeBasPreis[[i,i1]] = Decimal.pow(Decimal.mul(i, 2), 1).mul(100);
-        Game.upgradePreis[[i,i1]] = Game.upgradeBasPreis[[i,i1]];
-        Game.upgradePriceErh[[i,i1]] = Decimal.mul(0.5, i).add(1).pow(1.4+i1*0.1);
+        Game.upgradeBasPreis[i][i1] = Decimal.pow(Decimal.mul(i, 2), 1).mul(100);
+        Game.upgradePreis[i][i1] = Game.upgradeBasPreis[i][i1];
+        Game.upgradePriceErh[i][i1] = Decimal.mul(0.5, i).add(1).pow(1.4+i1*0.1);
         
     }
    }
