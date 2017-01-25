@@ -78,7 +78,7 @@ $("#NavOpt").click(function() {
       uiv.Upgrades.upgr.slideUp()
 })
 //Nav Upgrade Button Click
-$("NavUpgr").click(function(){
+$("#NavUpgr").click(function(){
     uiv.main.slideUp();
     uiv.options.slideUp();
     uiv.Upgrades.upgr.slideToggle();
