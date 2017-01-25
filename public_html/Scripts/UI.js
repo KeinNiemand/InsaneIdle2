@@ -60,11 +60,12 @@ function initUI(){
     uiv.Upgrades.upgr.slideUp();
     //Hiding lvl1 bought counter
     $("#gekauftanzeige1").hide()
-    }
-    //Lvl menu extender
-    $('.levels').on('click', function() {
-    $(this).next('.levelinh').slideToggle();
+    //Lvl Menu extender
+        $('.levels').click( function() {
+        $(this).next('.levelinh').slideToggle();
                 });
+    }
+
 //Nav Main Button Click    
 $("nav>*:first").click(function() {
       uiv.main.slideToggle();
