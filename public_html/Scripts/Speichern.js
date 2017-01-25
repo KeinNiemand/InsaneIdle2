@@ -33,9 +33,9 @@ function DecimalWerteKonvertieren() {
         Game.Sp.anzGek[konv] = Decimal.fromJSON(Game.Sp.anzGek[konv]);
         Game.Sp.geld[konv] = Decimal.fromJSON(Game.Sp.geld[konv]);
         Game.Sp.produmul[konv] = Decimal.fromJSON(Game.Sp.produmul[konv]);
-        for (konv2=0; konv2<upgradeanzahl; konv2++) {
-            Game.Sp.upgradeGek[[konv], [konv2]] = Decimal.fromJSON(Game.Sp.upgradeGek[[konv], [konv2]]);
-        }
+        //for (konv2=0; konv2<upgradeanzahl; konv2++) {
+       //     Game.Sp.upgradeGek[[konv,konv2]] = Decimal.fromJSON(Game.Sp.upgradeGek[[konv,konv2]]);
+       // }
     }
 }
 
