@@ -30,7 +30,7 @@ function generateMain() {
 }
 function generateUpgradesUI(){
     uiv.Upgrades.upgr = $("#Upgr")
-    for (u = 1; u<= anzahl; u++) {
+    for (var u = 1; u<= anzahl; u++) {
         uiv.Upgrades.levels[u] = $('<h1 id="upgrLevel' + u + '" class="levels">Upgrade lvl'+u+' </h1>');
         uiv.Upgrades.upgr.append(uiv.Upgrades.levels[u]);
         uiv.Upgrades.levinh[u] = $("<div class='levelinh'></div>");
@@ -40,8 +40,8 @@ function generateUpgradesUI(){
         uiv.Upgrades.kaufKnopf[u] = [];
         uiv.Upgrades.preisanzeige[u] = [];
         uiv.Upgrades.gekauftanzeige[u] = [];
-        for (u2 = 0; u2<upgradeanzahl; u2++){
-            uiv.Upgrades.kaufKnopf[u][u2] = $("<button id='upgrkn"+u+"S"+u2+"'>Error2</button>");
+        for (var u2 = 0; u2<upgradeanzahl; u2++){
+            uiv.Upgrades.kaufKnopf[u][u2] = $("<button id='upgrkn"+u+"S"+u2+"'onclick='upgradeKauf("+u+","+u2+")'>Error2</button>");
             uiv.Upgrades.levinh[u].append(uiv.Upgrades.kaufKnopf[u][u2]);
             uiv.Upgrades.preisanzeige[u][u2] = $("<span id='upgrpreisanz"+u+"S"+u2+"'>Error3</span>");
             uiv.Upgrades.levinh[u].append(uiv.Upgrades.preisanzeige[u][u2])
