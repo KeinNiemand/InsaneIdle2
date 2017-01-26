@@ -16,7 +16,7 @@ function generateMain() {
         uiv.main.append(uiv.levinh[i])
         uiv.anzeigen[i] =$('<div id="anzeige'+i+'"> 123 </div>')
         uiv.levinh[i].append(uiv.anzeigen[i])
-        uiv.KnopfA[i] =$('<button id="KnopfA'+i+'" class="Knopf" onclick="kauf('+Game.preis[i]+', "Game.Sp.geld['+i+']", "Game.Sp.anzGek['+i+']", 1.5)">Buy 1/50%More</button> ')
+        uiv.KnopfA[i] =$('<button id="KnopfA'+i+'" class="Knopf" onclick="kauf('+i+')">Buy 1/50%More</button> ')
         if (i != 1)
         uiv.levinh[i].append(uiv.KnopfA[i])
         uiv.preisanzeigen[i] = $('<span id="pAnzeige'+i+'"> Preis: </span>')
