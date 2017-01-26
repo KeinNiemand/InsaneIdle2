@@ -29,7 +29,7 @@ function rechnen() {
         Game.protick[i] = Game.Sp.geld[i+1].mul(Game.produmul[i]).mul(Game.Sp.geld[i]).sqrt();
         Game.preis[i] = Game.basPreis[i].mul(Game.preiserh[i].pow(Game.Sp.anzGek[i]));
         for (var i1=0; i<upgradeanzahl; i++) {
-            
+            Game.produmul[i] = 
         }
     }
     };
