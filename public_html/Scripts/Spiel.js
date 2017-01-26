@@ -4,19 +4,19 @@
  * and open the template in the editor.
  */
 
-function kauf(nummer) {
-    if(Game.Sp.geld[1].gt(Game.preis[nummer]) && nummer !=1 ) {
-        if(Game.Sp.geld[nummer].gt(0)){
-            Game.Sp.geld[1] = Game.Sp.geld[1].sub(Game.preis[nummer]);
-            Game.Sp.geld[nummer] = Game.Sp.geld[nummer].mul(1.5);
-            Game.Sp.anzGek[nummer] = Game.Sp.anzGek[nummer].add(1)
-            rechnen()
-            TextAktu()
+function kauf(preis, wasGekVar, anzGekVar, effekt) {
+    if(Game.Sp.geld[1].gt(preis)) {
+        if(wasGekVar.gt(0)){
+            Game.Sp.geld[1] = Game.Sp.geld[1].sub(preis);
+            window[wasGekVar] = window[wasGekVar].mul(effekt);
+            window[anzGekVar] = window[anzGekVar].add(1);
+            rechnen();
+            TextAktu();
         }
         else {
-            Game.Sp.geld[1] = Game.Sp.geld[1].sub(Game.preis[nummer]);
-            Game.Sp.geld[nummer] = Decimal(1);
-            Game.Sp.anzGek[nummer] = Game.Sp.anzGek[nummer].add(1);
+            Game.Sp.geld[1] = Game.Sp.geld[1].sub(preis);
+            window[wasGekVar] = Decimal(1);
+            window[anzGekVar] = window[wasGekVar].add(1);
             rechnen()
             TextAktu()
         }
