@@ -38,7 +38,6 @@ var Game = {
     Sp: {
         geld: [],
         anzGek: [],
-        produmul: [],
         lastUpdate: new Date().getTime(),
         upgradeGek: [[]]
     },
@@ -48,6 +47,7 @@ var Game = {
     protick: [],
     savever: savever,
     protickMul: [],
+    produmul: [],
     upgradeEfekt: [],
     upgradePreis: [[]],
     upgradePriceErh: [[]],

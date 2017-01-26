@@ -24,16 +24,20 @@ function kauf(nummer) {
 }
 
 function rechnen() {
-    for (i=1; i<=anzahl ;i++) {
+    for (var i=1; i<=anzahl ;i++) {
         if (i < anzahl)
         Game.protickMul[i] = Game.Sp.geld[i+1].mul(Game.Sp.produmul[i]);
         Game.protick[i] = Game.protickMul[i].mul(Game.Sp.geld[i]).sqrt();
         Game.preis[i] = Game.basPreis[i].mul(Game.preiserh[i].pow(Game.Sp.anzGek[i]));
+        for (var i1=0; i<upgradeanzahl; i++) {
+            
+        }
+    }
     };
-}
+
 
 function protick(modi){
-    for (ticker=anzahl ; ticker>0 ; ticker--) {
+    for (var ticker=anzahl ; ticker>0 ; ticker--) {
         modi = modi || 1
         rechnen()
         Game.Sp.geld[ticker] = Game.Sp.geld[ticker].add(Game.protick[ticker].mul(modi));
