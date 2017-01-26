@@ -40,3 +40,12 @@ function protick(modi){
         TextAktu()
     }
 }
+
+function upgradeKauf(num1, num2) {
+    if (Game.Sp.geld[1].gt(Game.upgradePreis[num1][num2])) {
+        Game.Sp.upgradeGek[num1][num2] = Game.Sp.upgradeGek[num1][num2].add(1);
+        Game.Sp.geld[1] = Game.Sp.geld[1].sub(Game.upgradePreis[num1][num2]);
+        rechnen()
+        TextAktu()
+    }
+}
