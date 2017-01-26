@@ -26,7 +26,7 @@ function kauf(nummer) {
 function rechnen() {
     for (var i=1; i<=anzahl ;i++) {
         if (i < anzahl)
-        Game.protick[i] = Game.Sp.geld[i+1].mul[Game.produmul].mul(Game.Sp.geld[i]).sqrt();
+        Game.protick[i] = Game.Sp.geld[i+1].mul(Game.produmul[i]).mul(Game.Sp.geld[i]).sqrt();
         Game.preis[i] = Game.basPreis[i].mul(Game.preiserh[i].pow(Game.Sp.anzGek[i]));
         for (var i1=0; i<upgradeanzahl; i++) {
             

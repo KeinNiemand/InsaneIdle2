@@ -8,7 +8,7 @@
 var anzahl = 5;
 var TPS = 30;
 Decimal.config({ precision: 12 })
-var savever = 5;
+var savever = 6;
 var upgradeanzahl = 2;
 
 var uiv = {
@@ -69,7 +69,7 @@ function initvars() {
     //PREIS ERHÖUNGS FORMEL
     Game.preiserh[i] = Decimal.mul(0.4,i).add(1).pow(1.4);
     Game.preis[i] = Game.basPreis[i];
-    Game.Sp.produmul[i] = Decimal(0.001);
+    Game.produmul[i] = Decimal(0.001);
     //Upgrade Stuff 
     Game.Sp.upgradeGek[i] = [];
     Game.upgradePreis[i] = [];
