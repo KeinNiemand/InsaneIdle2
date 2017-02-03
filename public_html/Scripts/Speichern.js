@@ -3,6 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+var combineObj = function(obj1, obj2) {
+    for(var key in obj2){
+        obj1[key] = obj2[key]
+    }
+    return obj1
+    }
+
+
 
 function Speichern() {
    localStorage["InsaneIdle2S"] = btoa(JSON.stringify(Game.Sp));
