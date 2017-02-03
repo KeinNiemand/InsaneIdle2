@@ -82,7 +82,7 @@ function initvars() {
         Game.upgradeEfekt[i1] = Decimal.mul(0.75, Decimal(1.5).pow(i1));
         Game.Sp.upgradeGek[i][i1] = Decimal(0);
         //Upgrade BasPreis Formel
-        Game.upgradeBasPreis[i][i1] = Decimal.pow(Decimal.mul(i, Decimal.add(0.2,Decimal.mul(i1,0.1))).add(1), Decimal(160.66).mul(0.08).mul(i)).mul(100);
+        Game.upgradeBasPreis[i][i1] = Decimal.pow(Decimal.mul(i, Decimal.add(0.1,Decimal.mul(i1,0.1))).add(1), Decimal(176.66)).mul(100);
         Game.upgradePreis[i][i1] = Game.upgradeBasPreis[i][i1];
         //Upgrade Preis Erhöungs Formel
         Game.upgradePriceErh[i][i1] = Decimal.mul(0.1, i).add(1.4).pow(2.8+i1);
