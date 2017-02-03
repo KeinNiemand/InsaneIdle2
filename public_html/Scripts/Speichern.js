@@ -24,7 +24,7 @@ function Laden() {
     if (Game.savever === savever) {
         if (!localStorage["InsaneIdle2S"]) return;
         var save_data =  JSON.parse(atob(localStorage["InsaneIdle2S"]));
-        Game.Sp = combineObj(save_data);
+        Game.Sp = combineObj(Game.Sp , save_data);
         DecimalWerteKonvertieren()
     }
     else
