@@ -53,7 +53,7 @@ var Game = {
     upgradePreis: [],
     upgradePriceErh: [],
     upgradeBasPreis: [],
-    maxBuyAmount: null
+    maxBuyAmount: [null]
 };
 
 
