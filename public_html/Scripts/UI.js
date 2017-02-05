@@ -102,11 +102,11 @@ function TextAktu() {
         else 
             $("#KnopfA"+i).css("background-color", "grey");
         $("#produmulanz"+i).text("Produktmul: " + Game.produmul[i].toPrecision(3))
-        for (i3=0; i3<upgradeanzahl; i3++) {
+        for (var i3=0; i3<upgradeanzahl; i3++) {
         $("#upgrkn"+i+"S"+i3).text("Upgrade "+(i3+1)+ " efficiency = " +Game.upgradeEfekt[i3].add(1).toPrecision(3))
             $("#upgrpreisanz"+i+"S"+i3).text("Price: "+ Game.upgradePreis[i][i3].toPrecision(3))
             $("#upgrgeksanz"+i+"S"+i3).text("  You have bought this "+ Game.Sp.upgradeGek[i][i3].toPrecision(3)+"times")
         }
-        $("KnopfA"+i).text("Buy 1| 50%("+getBuyAmount(i)+") Maxed at "+Game.maxBuyAmount.toPrecision(3));
+        $("KnopfA"+i).text("Buy 1| 50%("+getBuyAmount(i)+") Maxed at "+Game.maxBuyAmount[i].toPrecision(3));
     }
 }
