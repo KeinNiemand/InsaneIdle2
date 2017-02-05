@@ -63,7 +63,6 @@ function initvars() {
     Game.Sp.geld[i] = Decimal(0);
     Game.Sp.anzGek[i] = Decimal(0);
     Game.protick[i] = Decimal(0);
-    Game.protickMul[i] = Decimal(0);
     //Game.basPreis[i] = Decimal(Math.pow(1+((i*0.1)-0.2), 66.66) * 100)
     //BASIS PREIS FORMEL
     Game.basPreis[i] = Decimal(Decimal.pow(Decimal.mul(i,0.1).add(0.8), 176.66).mul(2));
@@ -73,6 +72,7 @@ function initvars() {
     Game.preis[i] = Game.basPreis[i];
     Game.basprodumul[i] = Decimal(0.001);
     Game.produmul[i] = Game.basprodumul[i];
+    Game.maxBuyAmount[i] = Deciaml(10000).add(Game.protick.mul(10000));
     //Upgrade Stuff 
     Game.Sp.upgradeGek[i] = [];
     Game.upgradePreis[i] = [];
