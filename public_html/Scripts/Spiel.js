@@ -32,7 +32,7 @@ function rechnen() {
         if (i < anzahl)
         Game.protick[i] = Game.Sp.geld[i+1].mul(Game.produmul[i]).mul(Game.Sp.geld[i]).sqrt();
         Game.preis[i] = Game.basPreis[i].mul(Game.preiserh[i].pow(Game.Sp.anzGek[i]));
-        Game.maxBuyAmount[i] = Deciaml(10000).add(Game.protick.mul(10000));
+        Game.maxBuyAmount[i] = Decimal(10000).add(Game.protick[i].mul(10000));
         upgradeMul[i] = Decimal(1);
         for (var i1=0; i1<upgradeanzahl; i1++) {
             
