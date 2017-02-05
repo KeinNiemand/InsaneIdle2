@@ -39,7 +39,7 @@ function rechnen() {
             upgradeMul[i] = upgradeMul[i].mul(Game.upgradeEfekt[i1].add(1).pow(Game.Sp.upgradeGek[i][i1]));
             Game.upgradePreis[i][i1] = Game.upgradeBasPreis[i][i1].mul(Game.upgradePriceErh[i][i1].pow(Game.Sp.upgradeGek[i][i1]));
         }
-        Game.produmul[i] = Game.basprodumul[i].mul(upgradeMul[i].div(upgradeMul[i].cbrt().mul(2)));
+        Game.produmul[i] = Game.basprodumul[i].mul(upgradeMul[i].sqrt());
     }
     };
 
