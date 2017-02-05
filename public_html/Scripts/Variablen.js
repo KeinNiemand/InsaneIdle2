@@ -72,7 +72,7 @@ function initvars() {
     Game.preis[i] = Game.basPreis[i];
     Game.basprodumul[i] = Decimal(0.001);
     Game.produmul[i] = Game.basprodumul[i];
-    Game.maxBuyAmount[i] = Deciaml(10000).add(Game.protick.mul(10000));
+    Game.maxBuyAmount[i] = Deciamal(10000).add(Game.protick.mul(10000));
     //Upgrade Stuff 
     Game.Sp.upgradeGek[i] = [];
     Game.upgradePreis[i] = [];
