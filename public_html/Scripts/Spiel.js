@@ -8,10 +8,10 @@ function kauf(nummer) {
     if(Game.Sp.geld[1].gt(Game.preis[nummer]) && nummer !=1 ) {
         if(Game.Sp.geld[nummer].gt(0)){
             Game.Sp.geld[1] = Game.Sp.geld[1].sub(Game.preis[nummer]);
-            if (Game.Sp.geld[nummer].mul(1.5).lte(Game.maxBuyAmount))
+            if (Game.Sp.geld[nummer].mul(1.5).lte(Game.maxBuyAmount[nummer]))
                 Game.Sp.geld[nummer] = Game.Sp.geld[nummer].mul(1.5);
             else
-                Game.Sp.geld[nummer] = Game.Sp.geld[nummer].add(Game.maxBuyAmount);
+                Game.Sp.geld[nummer] = Game.Sp.geld[nummer].add(Game.maxBuyAmount[nummer]);
             Game.Sp.anzGek[nummer] = Game.Sp.anzGek[nummer].add(1)
             rechnen()
             TextAktu()
@@ -63,8 +63,8 @@ function upgradeKauf(num1, num2) {
 }
 
 function getBuyAmount(was) {
-            if (Game.Sp.geld[was].mul(1.5).lte(Game.maxBuyAmount))
+            if (Game.Sp.geld[was].mul(1.5).lte(Game.maxBuyAmount[was]))
                 return Game.Sp.geld[was].mul(1.5).toPrecision(3);
             else
-                return Game.Sp.geld[was].add(Game.maxBuyAmount).toPrecision(3);
+                return Game.Sp.geld[was].add(Game.maxBuyAmount[was]).toPrecision(3);
 }
