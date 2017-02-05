@@ -8,7 +8,7 @@
 var anzahl = 10;
 var TPS = 30;
 Decimal.config({ precision: 12 })
-var savever = 3;
+var savever = 2;
 var upgradeanzahl = 2;
 
 var uiv = {
