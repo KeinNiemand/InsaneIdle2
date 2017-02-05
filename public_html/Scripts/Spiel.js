@@ -62,9 +62,9 @@ function upgradeKauf(num1, num2) {
     }
 }
 
-function getBuyAmount() {
-            if (Game.Sp.geld[nummer].mul(1.5).lte(Game.maxBuyAmount))
-                return Game.Sp.geld[nummer].mul(1.5).toPrecision(3);
+function getBuyAmount(was) {
+            if (Game.Sp.geld[was].mul(1.5).lte(Game.maxBuyAmount))
+                return Game.Sp.geld[was].mul(1.5).toPrecision(3);
             else
-                return Game.Sp.geld[nummer].add(Game.maxBuyAmount).toPrecision(3);
+                return Game.Sp.geld[was].add(Game.maxBuyAmount).toPrecision(3);
 }
