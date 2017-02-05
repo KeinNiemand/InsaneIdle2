@@ -8,7 +8,10 @@ function kauf(nummer) {
     if(Game.Sp.geld[1].gt(Game.preis[nummer]) && nummer !=1 ) {
         if(Game.Sp.geld[nummer].gt(0)){
             Game.Sp.geld[1] = Game.Sp.geld[1].sub(Game.preis[nummer]);
-            Game.Sp.geld[nummer] = Game.Sp.geld[nummer].mul(1.5);
+            if (Game.Sp.geld[nummer].mul(1.5).lte(Game.maxBuyAmount))
+                Game.Sp.geld[nummer] = Game.Sp.geld[nummer].mul(1.5);
+            else
+                Game.Sp.geld[nummer] = Game.Sp.geld[nummer].add(Game.maxBuyAmount);
             Game.Sp.anzGek[nummer] = Game.Sp.anzGek[nummer].add(1)
             rechnen()
             TextAktu()
