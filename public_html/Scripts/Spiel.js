@@ -61,3 +61,10 @@ function upgradeKauf(num1, num2) {
         TextAktu()
     }
 }
+
+function getBuyAmount() {
+            if (Game.Sp.geld[nummer].mul(1.5).lte(Game.maxBuyAmount))
+                return Game.Sp.geld[nummer].mul(1.5);
+            else
+                return Game.Sp.geld[nummer].add(Game.maxBuyAmount);
+}

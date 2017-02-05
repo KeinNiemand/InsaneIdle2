@@ -91,7 +91,7 @@ $(".Nav").css("font-family" , "Segoe UI Semibold,Frutiger,Frutiger Linotype,Deja
 
 
 function TextAktu() {
-    for (i=1; i<=anzahl;i++) {
+    for (var i=1; i<=anzahl;i++) {
         $("#anzeige"+i).text(Game.Sp.geld[i].toPrecision(3) + 'lvl' +i);
         $("#pAnzeige"+i).text("Price: " + Game.preis[i].toPrecision(3) + ' lvl1');
         $("#produktanzeige"+i).text("you get "+Game.protick[i].mul(TPS).toPrecision(3)+" lvl "+i+" Ps");
@@ -107,5 +107,6 @@ function TextAktu() {
             $("#upgrpreisanz"+i+"S"+i3).text("Price: "+ Game.upgradePreis[i][i3].toPrecision(3))
             $("#upgrgeksanz"+i+"S"+i3).text("  You have bought this "+ Game.Sp.upgradeGek[i][i3].toPrecision(3)+"times")
         }
+        $("KnopfA"+i).text("Buy 1| 50%("+Game.Sp.geld[nummer].mul(1.5)+") Maxed at ")
     }
 }
