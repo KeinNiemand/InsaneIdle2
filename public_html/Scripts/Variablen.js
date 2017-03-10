@@ -68,7 +68,7 @@ function initvars() {
     if (i<4)
     Game.basPreis[i] = Decimal(Decimal.pow(Decimal.mul(i,0.2).add(0.6), 140).mul(2));
     else
-    Game.basPreis[i] = Decimal(Decimal.pow(Decimal.mul(i,0.2).add(0.6), 180).mul(2));  
+    Game.basPreis[i] = Decimal(Decimal.pow(Decimal.mul(i,0.25).add(1), 150).mul(2));  
     //Game.preiserh[i] = Decimal(1+(1.5*i)^1.8)
     //PREIS ERHÖUNGS FORMEL
     Game.preiserh[i] = Decimal.mul(0.4,i).add(1).pow(1.4);
