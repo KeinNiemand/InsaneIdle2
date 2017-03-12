@@ -93,7 +93,7 @@ function initvars() {
             Game.upgradeBasPreis[i][i1] = Decimal(Decimal.pow(Decimal.mul(i+1+i1*0.6,0.2).add(0.7), 166).mul(2));  
         Game.upgradePreis[i][i1] = Game.upgradeBasPreis[i][i1];
         //Upgrade Preis Erhöungs Formel
-        Game.upgradePriceErh[i][i1] = Decimal.mul(0.1, i).add(1.4).pow(2.8+i1);
+        Game.upgradePriceErh[i][i1] = Decimal.mul(0.1, i).add(1.4).pow(3.2+i1);
         
     }
    }
