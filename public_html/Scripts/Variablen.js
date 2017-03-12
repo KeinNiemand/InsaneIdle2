@@ -53,7 +53,9 @@ var Game = {
     upgradePreis: [],
     upgradePriceErh: [],
     upgradeBasPreis: [],
-    maxBuyAmount: [null]
+    maxBuyAmount: [null],
+    baseMaxBuyAmount: Decimal(10000),
+    maxBuyAmountScale: Decimal(5000)
 };
 
 
@@ -75,7 +77,7 @@ function initvars() {
     Game.preis[i] = Game.basPreis[i];
     Game.basprodumul[i] = Decimal(0.001);
     Game.produmul[i] = Game.basprodumul[i];
-    Game.maxBuyAmount[i] = Decimal(10000).add(Game.protick[i].mul(10000));
+    Game.maxBuyAmount[i] = Decimal(Game.baseMaxBuyAmount).add(Game.protick[i].mul(Game.maxBuyAmountScale));
     //Upgrade Stuff 
     Game.Sp.upgradeGek[i] = [];
     Game.upgradePreis[i] = [];
