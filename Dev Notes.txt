@@ -1,2 +1,2 @@
--Increase maxBuyScale
+-Increase maxBuyScale (>5000 && <10000)
 -Improve/Change Some Code for the UI (Better use of the uiv Variables
