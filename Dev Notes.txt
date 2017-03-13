@@ -1,1 +1,2 @@
 -Increase maxBuyScale
+-Improve/Change Some Code for the UI (Better use of the uiv Variables
