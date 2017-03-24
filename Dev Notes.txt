@@ -1,3 +1,1 @@
--Increase maxBuyScale (>5000 && <10000)
 -Improve/Change Some Code for the UI (Better use of the uiv Variables
--Game Get's really fast after level 5/After Produktmul is very high. Something has to be nerved/Or Somthing needs to be more expansive
