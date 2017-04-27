@@ -82,11 +82,12 @@ $("#NavOpt").click(function() {
 $("#NavUpgr").click(function(){
     uiv.main.slideUp();
     uiv.options.slideUp();
-    uiv.Upgrades.upgr.slideToggle();
+    uiv.Upgrades.upgr.slideToggle();  
 })
 //Schriftart Setzen
 $("*").css("font-family" , "Segoe UI,Frutiger Linotype,Dejavu Sans,Helvetica Neue Frutiger, Verdana");
 $(".Nav").css("font-family" , "Segoe UI Semibold,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue Frutiger, Verdana");
+
 
 
 
@@ -106,7 +107,6 @@ function TextAktu() {
             $("#upgrkn"+i+"S"+i3).css("background-color" , buyButtonColor(Game.upgradePreis[i][i3]));
         }
         $("#KnopfA"+i).text("Buy 1| 50%("+getBuyAmount(i).toPrecision(3)+") Maxed at "+Game.maxBuyAmount[i].toPrecision(3));
-        $("#NavMain").html("Main <br>" + $(".anzeige1").text()+"" );
     }
 }
 
