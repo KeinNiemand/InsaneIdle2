@@ -10,6 +10,7 @@ and open the template in the editor.
 body{
     background-color: green;
     padding: 0px;
+    padding-top:60px;
     margin:  0px;
     font-size: 13.5pt;
     background-image: url("Img/Background.png");
